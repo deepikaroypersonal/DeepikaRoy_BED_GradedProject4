@@ -1,0 +1,15 @@
+server:
+  port: 8222
+  
+spring:
+   datasource:
+     username: sa
+     password: welcome
+     url: jdbc:h2:mem:orders_db
+   jpa: 
+    show-sql: true 
+    hibernate: 
+      ddl-auto: create
+   mvc:
+    pathmatch:
+     matching-strategy: ant-path-matcher
